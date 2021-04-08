@@ -1,3 +1,16 @@
-                       //Recuperando quanto visto in classe, generare il js per lo slider, con l'obbiettivo di comprendere cosa sta succedendo.
+                       //- stampare in pagina un item per ogni elemento contenuto in un array
+                       //- ogni item ha una "x" associata: cliccando su di essa, l'item viene rimosso dalla lista
+                       //- predisporre un input per aggiungere un nuovo item alla lista: digitando il tasto invio oppure ciccando su un pulsante, il testo digitato viene aggiunto alla lista
+function createVue() {
+     new Vue ({
+          el: '#myVue',
 
-// $(document).ready(lollipop);
+          data: {
+               todoDatabase : ['Corso', 'Programmare','giocare a Cyberpunk', 'dormire']
+          },
+
+          methods: {
+          }
+     })
+}
+$(document).ready(createVue);
