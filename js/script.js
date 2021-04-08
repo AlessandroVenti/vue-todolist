@@ -6,12 +6,18 @@ function createVue() {
           el: '#myVue',
 
           data: {
-               todoDatabase : ['Corso', 'Programmare','giocare a Cyberpunk', 'dormire']
+               todoDatabase : ['Corso', 'Programmare','giocare a Cyberpunk', 'dormire'],
+
+               newElement: ``
           },
 
           methods: {
                deleteCurrentElement: function(index) {
                     this.todoDatabase.splice(index, 1);
+               },
+
+               addElement: function() {
+                    this.todoDatabase.push(this.newElement);
                }
           }
      })

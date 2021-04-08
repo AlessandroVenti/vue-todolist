@@ -16,8 +16,8 @@
             <img src="img/logo.png" alt="">
         </header>
         <main id="myVue">
-            <input type="text" placeholder="Nuovo todo">
-            <button>Aggiungi</button>
+            <input v-model="newElement" type="text" placeholder="Nuovo todo">
+            <button @click="addElement">Aggiungi</button>
             <div class="list-container">
                 <ul>
                     <li v-for="(content,indexContent) in todoDatabase">
