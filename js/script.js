@@ -17,7 +17,9 @@ function createVue() {
                },
 
                addElement: function() {
-                    this.todoDatabase.push(this.newElement);
+                    if( this.newElement.length != 0 ){
+                         this.todoDatabase.push(this.newElement);
+                    }
                }
           }
      })

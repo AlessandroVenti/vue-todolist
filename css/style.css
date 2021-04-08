@@ -58,3 +58,8 @@ ul li {
 i {
     float: right;
 }
+
+p {
+    font-size: 40px;
+    text-align: center;
+}

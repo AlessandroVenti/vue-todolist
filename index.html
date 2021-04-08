@@ -19,12 +19,13 @@
             <input v-model="newElement" type="text" placeholder="Nuovo todo">
             <button @click="addElement">Aggiungi</button>
             <div class="list-container">
-                <ul>
+                <ul v-if="todoDatabase.length != 0">
                     <li v-for="(content,indexContent) in todoDatabase">
                         {{content}}
                         <i @click="deleteCurrentElement(indexContent)" class="fas fa-times"></i>
                     </li>
                 </ul>
+                <p v-else>no elements</p>
             </div>
         </main>
         
