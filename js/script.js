@@ -7,7 +7,6 @@ function createVue() {
 
           data: {
                todoDatabase : ['Corso', 'Programmare','giocare a Cyberpunk', 'dormire'],
-
                newElement: ``
           },
 
@@ -28,4 +27,5 @@ function createVue() {
 function final() {
      createVue();
 }
+
 $(document).ready(final);
