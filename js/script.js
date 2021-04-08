@@ -10,7 +10,14 @@ function createVue() {
           },
 
           methods: {
+               deleteCurrentElement: function(index) {
+                    this.todoDatabase.splice(index, 1);
+               }
           }
      })
 }
-$(document).ready(createVue);
+
+function final() {
+     createVue();
+}
+$(document).ready(final);

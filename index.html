@@ -20,9 +20,9 @@
             <button>Aggiungi</button>
             <div class="list-container">
                 <ul>
-                    <li v-for="(content,index) in todoDatabase">
+                    <li v-for="(content,indexContent) in todoDatabase">
                         {{content}}
-                        <i class="fas fa-times"></i>
+                        <i @click="deleteCurrentElement(indexContent)" class="fas fa-times"></i>
                     </li>
                 </ul>
             </div>
